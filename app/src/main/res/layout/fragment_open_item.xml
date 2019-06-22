@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="secondadapter"
+            type="sion.my.caipiao.adapters.ActivityMainItemAdapter" />
+    </data>
+        <LinearLayout
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adapter="@{secondadapter}"></ListView>
+            </LinearLayout>
+</layout>

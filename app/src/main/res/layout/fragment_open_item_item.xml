@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="lottery"
+            type="sion.my.caipiao.bean.LotteryRecord.ResultBean.LotteryResListBean" />
+    </data>
+        <LinearLayout
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text='@{@string/tv1+lottery.lottery_no+@string/tv2+lottery.lottery_date}'/>
+            <TextView
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textSize="45dp"
+                android:text="@{lottery.lottery_res}"/>
+        </LinearLayout>
+            </LinearLayout>
+</layout>
