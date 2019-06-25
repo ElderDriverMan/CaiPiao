@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout>
+
     <data>
         <variable
             name="thirdadapter"
             type="sion.my.caipiao.adapters.ActivityMainItemAdapter" />
     </data>
         <LinearLayout
-
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:background="@android:color/holo_red_dark"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="鹏鹏彩票"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.Toolbar>
 
             <TextView
                 android:id="@+id/title"
