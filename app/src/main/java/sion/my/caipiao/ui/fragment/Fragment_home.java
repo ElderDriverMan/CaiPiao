@@ -23,13 +23,14 @@ import sion.my.caipiao.databinding.FragmentHomeBinding;
 
 import sion.my.caipiao.ui.activity.NewResultActivity;
 import sion.my.caipiao.ui.views.MyGridView;
+import sion.my.caipiao.ui.views.MyListView;
 
 @SuppressLint("ValidFragment")
 public class Fragment_home extends Fragment {
     FragmentActivity activity;
     FragmentHomeBinding fragmentHomeBinding;
     List<DressRehearsal.ResultBean> result;
-    private MyGridView mygv;
+    private MyListView mygv;
 
     public Fragment_home(List<DressRehearsal.ResultBean> result) {
         this.result = result;
@@ -52,7 +53,7 @@ public class Fragment_home extends Fragment {
 
 
    private void initView(View view) {
-        mygv = (MyGridView) view.findViewById(R.id.ggvv);
+        mygv = (MyListView) view.findViewById(R.id.ggvv);
         mygv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

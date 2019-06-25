@@ -62,7 +62,6 @@ public class Fragment_myself extends Fragment implements View.OnClickListener {
         login_btn.setOnClickListener(this);
         register_btn = (Button) view.findViewById(R.id.register_btn);
         register_btn.setOnClickListener(this);
-
         show2 = (LinearLayout) view.findViewById(R.id.show2);
         show2.setOnClickListener(this);
         show3 = (LinearLayout) view.findViewById(R.id.show3);

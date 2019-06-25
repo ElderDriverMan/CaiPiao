@@ -12,31 +12,30 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="match_parent">
-            <ScrollView
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/logo"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="历史开奖"/>
-                    <sion.my.caipiao.ui.views.MyGridView
-                        android:id="@+id/ggvv"
-                        android:numColumns="3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:adapter="@{adapter}"/>
-                </LinearLayout>
+                    android:text="彩种列表" />
 
-            </ScrollView>
+                <sion.my.caipiao.ui.views.MyListView
+                    android:id="@+id/ggvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adapter="@{adapter}"
+                    android:numColumns="3" />
+            </LinearLayout>
+
+        </ScrollView>
 
         </LinearLayout>
 </layout>
