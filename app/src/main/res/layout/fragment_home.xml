@@ -22,11 +22,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="彩种列表" />
-
                 <sion.my.caipiao.ui.views.MyListView
                     android:id="@+id/ggvv"
                     android:layout_width="match_parent"

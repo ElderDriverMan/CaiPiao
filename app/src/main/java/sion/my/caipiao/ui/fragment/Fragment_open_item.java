@@ -46,7 +46,7 @@ public class Fragment_open_item extends Fragment {
             @Override
             public void run() {
                 try {
-                    LotteryRecord lotteryRecord = Okhttpuntil.synGetRequesr("http://apis.juhe.cn/lottery/history?key=f79ead77b38f642fbe6555a2b8f6705d&lottery_id=" + lottery_id,
+                    LotteryRecord lotteryRecord = Okhttpuntil.synGetRequesr("http://apis.juhe.cn/lottery/history?key=fe9b5008f6d1a5b000badcd372a7b261&lottery_id=" + lottery_id,
                             LotteryRecord.class);
                     if(lotteryRecord!=null){
                         List<LotteryRecord.ResultBean.LotteryResListBean> lotteryResList = lotteryRecord.getResult().getLotteryResList();

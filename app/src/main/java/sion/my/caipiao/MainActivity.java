@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    DressRehearsal dressRehearsal_bean = Okhttpuntil.synGetRequesr("https://apis.juhe.cn/lottery/types?key=f79ead77b38f642fbe6555a2b8f6705d", DressRehearsal.class);
+                    DressRehearsal dressRehearsal_bean = Okhttpuntil.synGetRequesr("https://apis.juhe.cn/lottery/types?key=fe9b5008f6d1a5b000badcd372a7b261", DressRehearsal.class);
                     if (dressRehearsal_bean != null) {
                         if ("查询成功".equals(dressRehearsal_bean.getReason())) {
                             List<DressRehearsal.ResultBean> result = dressRehearsal_bean.getResult();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        AddFragment(new Fragment_home(result),"首页");
+                        AddFragment(new Fragment_home(result),"最新开奖");
                         AddFragment(new Fragment_open(result),"历史开奖");
                         AddFragment(new Fragment_myself(),"个人中心");
                         tablayout.setSelectedTabIndicatorHeight(0);
