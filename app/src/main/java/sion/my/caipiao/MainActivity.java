@@ -1,5 +1,6 @@
 package sion.my.caipiao;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -18,8 +19,9 @@ import sion.my.caipiao.bean.DressRehearsal;
 import sion.my.caipiao.until.Okhttpuntil;
 
 public class MainActivity extends AppCompatActivity {
-
-
+    private TabLayout tabLayout;
+    private List<Fragment> fragmentList;
+    private List<Drawable> icons;
     private ViewPager myvp;
     private TabLayout tablayout;
     List<Fragment> fragments=new ArrayList<>();
@@ -67,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+
+
                         AddFragment(new Fragment_home(result),"最新开奖");
                         AddFragment(new Fragment_open(result),"历史开奖");
                         AddFragment(new Fragment_myself(),"个人中心");

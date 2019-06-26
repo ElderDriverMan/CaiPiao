@@ -10,24 +10,29 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
+
         <LinearLayout
 
             android:id="@+id/show1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:color/background_light"
             android:gravity="center"
-            android:orientation="vertical"
-            android:background="#cccccc">
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/icon_rank"/>
+                android:src="@drawable/logo" />
+
             <Button
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light"
                 android:text="点击登录"
-                android:background="#8FB4EC"/>
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/show2"
