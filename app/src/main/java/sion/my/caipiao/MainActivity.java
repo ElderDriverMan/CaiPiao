@@ -54,12 +54,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    DressRehearsal dressRehearsal_bean = Okhttpuntil.synGetRequesr("https://apis.juhe.cn/lottery/types?key=fe9b5008f6d1a5b000badcd372a7b261", DressRehearsal.class);
+                    DressRehearsal dressRehearsal_bean = Okhttpuntil.synGetRequesr("https://apis.juhe.cn/lottery/types?key=f79ead77b38f642fbe6555a2b8f6705d", DressRehearsal.class);
                     if (dressRehearsal_bean != null) {
                         if ("查询成功".equals(dressRehearsal_bean.getReason())) {
                             List<DressRehearsal.ResultBean> result = dressRehearsal_bean.getResult();
                             /*int drawable = result.get(0).getDrawable();*/
-
                             for (int i = 0; i < result.size(); i++) {
                                 DressRehearsal.ResultBean resultBean = result.get(i);
                                 String lotteryName = resultBean.getLottery_id();

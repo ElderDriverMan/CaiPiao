@@ -38,7 +38,7 @@ public class NewResultActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    LotteyrResult lotteyrResult = Okhttpuntil.synGetRequesr("http://apis.juhe.cn/lottery/query?key=fe9b5008f6d1a5b000badcd372a7b261&lottery_id=" + lottery_id,
+                    LotteyrResult lotteyrResult = Okhttpuntil.synGetRequesr("http://apis.juhe.cn/lottery/query?key=f79ead77b38f642fbe6555a2b8f6705d&lottery_id=" + lottery_id,
                             LotteyrResult.class);
                     if(lotteyrResult!=null){
                         ActivityMainItemAdapter<LotteyrResult.ResultBean.LotteryPrizeBean> activityMainItemAdapter=

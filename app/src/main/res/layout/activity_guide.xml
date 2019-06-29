@@ -9,7 +9,8 @@
         android:id="@+id/gudiepage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/logo"
+        android:src="@mipmap/logo"
+        android:scaleType="fitXY"
         />
 
 </android.support.constraint.ConstraintLayout>
